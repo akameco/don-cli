@@ -13,6 +13,7 @@
   "license": "MIT",
   "repository": "akameco/don-cli",
   "dependencies": {
+    "fs-extra": "^0.26.4",
     "meow": "^3.7.0",
     "opn": "^4.0.0"
   },

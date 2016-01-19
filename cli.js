@@ -2,12 +2,15 @@
 'use strist';
 const meow = require('meow');
 const opn = require('opn');
+const fs = require('fs-extra');
 
 const cli = meow(`
   Usage
     $ don open  -- Open browser
   Options
     -n, --new  New article
+  Usage
+    $ don create  -- Create #週報
 `, {
   alias: {
     n: 'new'
@@ -23,4 +26,12 @@ if (cli.input[0] === 'open') {
   } else {
     opn(baseURL, opt);
   }
+} else if (cli.input[0] === 'create') {
+  fs.copy(`${__dirname}/templates/week.md`, `${process.cwd()}/week.md`, err => {
+    if (err) {
+      console.error(err);
+    }
+    console.log('Create week.md.')
+  });
 }
+
