@@ -15,5 +15,9 @@
   "dependencies": {
     "meow": "^3.7.0",
     "opn": "^4.0.0"
+  },
+  "xo": {
+    "esnext": true,
+    "space": true
   }
 }
