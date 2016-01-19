@@ -1,0 +1,19 @@
+{
+  "name": "@akameco/don-cli",
+  "version": "0.0.1",
+  "description": "command line util for cps don.",
+  "main": "cli.js",
+  "bin": {
+    "don": "cli.js"
+  },
+  "scripts": {
+    "test": "ava"
+  },
+  "author": "akameco",
+  "license": "MIT",
+  "repository": "akameco/don-cli",
+  "dependencies": {
+    "meow": "^3.7.0",
+    "opn": "^4.0.0"
+  }
+}
