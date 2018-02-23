@@ -1,5 +1,7 @@
 # @akameco/don-cli
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/akameco/don-cli.svg)](https://greenkeeper.io/)
+
 > command line util for cps don.
 
 ## Installation
